@@ -38,15 +38,8 @@ public class GameManagerResults : MonoBehaviour
         StartCoroutine(StartSet());
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-
-    }
-
     IEnumerator StartSet()
     {
-        //StartTextTwo.gameObject.SetActive(false);
         firstScore = GameObject.Find("DrawOneScore").GetComponent<DrawOneScore>().drawOneScore;
         secondScore = GameObject.Find("DrawTwoScore").GetComponent<DrawTwoScore>().drawTwoScore;
         thirdScore = GameObject.Find("DrawThreeScore").GetComponent<DrawThreeScore>().drawThreeScore;
