@@ -10,12 +10,10 @@ public class GameManagerDrawThree : MonoBehaviour
     public GameObject go2;
 
     private GameObject Do;
-
-    // luku määritetään per kenttä
-    // muista myös unity editor vaihtaa sama luku
+    
+    // number determined for each map
     public int lasku = 133;
-    // 100 / mesh collidereiden maara
-    // muista myös unity editor vaihtaa sama luku
+    // 100 / amount of mesh colliders
     public float suhdeluku = 0.67567f;
 
     public float jakolasku;
@@ -94,7 +92,7 @@ public class GameManagerDrawThree : MonoBehaviour
     public void UpdateInkLeft(float inkLeft)
     {
         twoDec = Mathf.RoundToInt(inkLeft);
-        // luku määritetään per kenttä - 1
+        // number determined for each map - 1
         jakolasku = (inkLeft / 132 * 100);
         twoDec = Mathf.RoundToInt(jakolasku);
         InkLeftText.text = "Ink left: " + twoDec + " %";
