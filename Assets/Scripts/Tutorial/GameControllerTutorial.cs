@@ -33,12 +33,6 @@ public class GameControllerTutorial : MonoBehaviour
         StartCoroutine(TutorialOneTimer());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator TutorialOneTimer()
     {
         yield return new WaitForSeconds(4);
