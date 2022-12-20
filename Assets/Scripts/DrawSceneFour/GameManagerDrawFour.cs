@@ -92,7 +92,7 @@ public class GameManagerDrawFour : MonoBehaviour
     public void UpdateInkLeft(float inkLeft)
     {
         twoDec = Mathf.RoundToInt(inkLeft);
-        // luku määritetään per kenttä - 1
+        // number determined for each map - 1
         jakolasku = (inkLeft / 165 * 100);
         twoDec = Mathf.RoundToInt(jakolasku);
         InkLeftText.text = "Ink left: " + twoDec + " %";
