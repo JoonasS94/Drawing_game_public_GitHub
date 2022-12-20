@@ -11,10 +11,9 @@ public class GameManagerDrawOne : MonoBehaviour
 
     private GameObject Do;
 
-    // luku m‰‰ritet‰‰n per kentt‰
-    // muista myˆs unity editor vaihtaa sama luku
+    // number determined for each map
     public int lasku = 62;
-    // 100 / mesh collidereiden maara
+    // 100 / amount of mesh colliders
     public float suhdeluku = 4.166667f;
 
     public float jakolasku;
@@ -62,7 +61,6 @@ public class GameManagerDrawOne : MonoBehaviour
 
         if (dist > 0.15f && stillDrawing == true)
         { 
-            //Debug.Log("Distance grown, I should move now");
             go2.transform.position = new Vector3(go1.transform.position.x, -0.0035f, go1.transform.position.z);
             lasku = (lasku - 1);
             UpdateInkLeft(lasku);
@@ -92,7 +90,7 @@ public class GameManagerDrawOne : MonoBehaviour
     public void UpdateInkLeft(float inkLeft)
     {
         twoDec = Mathf.RoundToInt(inkLeft);
-        // luku m‰‰ritet‰‰n per kentt‰ - 1
+        // number determined for each map - 1
         jakolasku = (inkLeft / 61 * 100);
         twoDec = Mathf.RoundToInt(jakolasku);
         InkLeftText.text = "Ink left: " + twoDec + " %";
