@@ -9,12 +9,6 @@ public class GameManagerTutorial : MonoBehaviour
     public GameObject go1;
     public GameObject go2;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
