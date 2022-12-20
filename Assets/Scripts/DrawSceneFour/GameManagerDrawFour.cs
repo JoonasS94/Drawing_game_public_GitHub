@@ -11,11 +11,9 @@ public class GameManagerDrawFour : MonoBehaviour
 
     private GameObject Do;
 
-    // luku m‰‰ritet‰‰n per kentt‰
-    // muista myˆs unity editor vaihtaa sama luku
+    // number determined for each map
     public int lasku = 166;
-    // 100 / mesh collidereiden maara
-    // muista myˆs unity editor vaihtaa sama luku
+    // 100 / amount of mesh colliders
     public float suhdeluku = 1.38889f;
 
     public float jakolasku;
@@ -94,7 +92,7 @@ public class GameManagerDrawFour : MonoBehaviour
     public void UpdateInkLeft(float inkLeft)
     {
         twoDec = Mathf.RoundToInt(inkLeft);
-        // luku m‰‰ritet‰‰n per kentt‰ - 1
+        // luku m√§√§ritet√§√§n per kentt√§ - 1
         jakolasku = (inkLeft / 165 * 100);
         twoDec = Mathf.RoundToInt(jakolasku);
         InkLeftText.text = "Ink left: " + twoDec + " %";
