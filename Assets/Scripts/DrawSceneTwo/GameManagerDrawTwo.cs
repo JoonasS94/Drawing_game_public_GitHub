@@ -61,7 +61,6 @@ public class GameManagerDrawTwo : MonoBehaviour
 
         if (dist > 0.15f && stillDrawing == true)
         { 
-            //Debug.Log("Distance grown, I should move now");
             go2.transform.position = new Vector3(go1.transform.position.x, -0.0035f, go1.transform.position.z);
             lasku = (lasku - 1);
             UpdateInkLeft(lasku);
